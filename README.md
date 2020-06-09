@@ -1,4 +1,4 @@
-# giandata.github.io
+# Tableau-openpuglia 
 
 This is a Web Data Connector for Tableau Software. 
 It allows to connect to API of openpuglia.org which provides many data services.
