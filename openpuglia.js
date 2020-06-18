@@ -1,11 +1,11 @@
 (function() {
     // Create the connector object
 
-    let myConnector = tableau.makeConnector();
+    var myConnector = tableau.makeConnector();
 
     // Define the schema
     myConnector.getSchema = function(schemaCallback) {
-        let cols = [{
+        var cols = [{
             id: "data",
             alias:"Data",
             dataType: tableau.dataTypeEnum.date
@@ -80,10 +80,10 @@
 
         $.getJSON("https://openpuglia.org/api/?q=getsummarydatacovid-19&mode=ts&lang=it", function(data) {
             //var list = data.json(),       // what method to call? .feature .ts .list..
-            let  tableData = [];
+            var  tableData = [];
           console.log(data)
             // Iterate over the JSON object
-            for (let i = 0; i < data.length; i++) {
+            for (var i = 0; i < data.length; i++) {
                 tableData.push({
                     "data":data[i]["data"],  // metti in data la response al campo "data"
                     "stato":data[i]["stato"],
